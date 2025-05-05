@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Couple Tracker</title>
+  <meta charset="UTF-8" />
+  <style>
+    #map { height: 400px; width: 100%; }
+    body { font-family: sans-serif; padding: 20px; }
+    input { margin: 5px 0; padding: 5px; }
+  </style>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+</head>
+<body>
+
+<h2>Couple Location Tracker</h2>
+
+<div id="auth">
+  <input type="email" id="email" placeholder="Email"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+  <button onclick="register()">Register</button>
+</div>
+
+<div id="partner" style="display:none;">
+  <p>Your Code: <span id="userCode"></span></p>
+  <input id="partnerCodeInput" placeholder="Partner Code"><br>
+  <button onclick="connectPartner()">Connect</button>
+</div>
+
+<div id="map" style="display:none;"></div>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "YOUR_FIREBASE_API_KEY",
+    authDomain: "xxx.firebaseapp.com",
+    databaseURL: "https://xxx.firebaseio.com",
+    projectId: "xxx",
+    appId: "xxx"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.database();
+
+  let uid = null;
+  let map, myMarker, partnerMarker;
+
+  function login() {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    auth.signInWithEmailAndPassword(email, password)
+      .then(user => {
+        uid = user.user.uid;
+        document.getElementById('auth').style.display = 'none';
+        document.getElementById('partner').style.display = 'block';
+        document.getElementById('userCode').innerText = uid.slice(0, 6);
+        startLocationTracking();
+      })
+      .catch(err => alert(err.message));
+  }
+
+  function register() {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    auth.createUserWithEmailAndPassword(email, password)
+      .then(() => login())
+      .catch(err => alert(err.message));
+  }
+
+  function connectPartner() {
+    const partnerId = document.getElementById('partnerCodeInput').value;
+    db.ref('users/' + uid + '/partner').set(partnerId);
+    db.ref('users/' + partnerId + '/partner').set(uid);
+    document.getElementById('partner').style.display = 'none';
+    document.getElementById('map').style.display = 'block';
+    watchPartner(partnerId);
+  }
+
+  function startLocationTracking() {
+    navigator.geolocation.watchPosition(pos => {
+      const coords = {
+        latitude: pos.coords.latitude,
+        longitude: pos.coords.longitude
+      };
+      db.ref('locations/' + uid).set(coords);
+      showMap(coords);
+    }, err => alert(err.message), { enableHighAccuracy: true });
+  }
+
+  function watchPartner(pid) {
+    db.ref('locations/' + pid).on('value', snap => {
+      if (!snap.exists()) return;
+      const loc = snap.val();
+      if (partnerMarker) partnerMarker.setMap(null);
+      partnerMarker = new google.maps.Marker({
+        position: { lat: loc.latitude, lng: loc.longitude },
+        map: map,
+        title: "Partner",
+        icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+      });
+    });
+  }
+
+  function showMap(coords) {
+    const center = { lat: coords.latitude, lng: coords.longitude };
+    if (!map) {
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: center
+      });
+    }
+    if (myMarker) myMarker.setMap(null);
+    myMarker = new google.maps.Marker({
+      position: center,
+      map: map,
+      title: "Me",
+      icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+    });
+    map.setCenter(center);
+  }
+</script>
+
+</body>
+</html>
