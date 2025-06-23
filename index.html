@@ -78,7 +78,7 @@
 </head>
 <body>
   <header>
-    <div>KUIS KASI PEMERINTAHAN</div>
+    <div>Kuis Kasi Pemerintahan Khakim Studio</div>
     <div id="timer">60:00</div>
   </header>
 
@@ -95,1206 +95,1210 @@
   </div>
 
   <script>
-const questions = [
-    {
-    "q": "Siapa yang memiliki kewenangan menetapkan batas dusun di desa (21)?",
-    "options": [
-      "A. Kepala Dusun",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Camat"
+  const questions = [
+  {
+    q: "Apa tugas utama Kasi Pemerintahan di desa?",
+    options: [
+      "A. Menyusun laporan keuangan desa",
+      "B. Melaksanakan urusan administrasi kependudukan dan kewilayahan",
+      "C. Memberikan pelayanan kesehatan dasar",
+      "D. Mengelola bantuan langsung tunai",
+      "E. Menyusun rencana pembangunan jangka menengah desa"
     ],
-    "answer": 2,
-    "explanation": "Kepala Desa berwenang menetapkan batas dusun setelah melalui musyawarah desa dan kajian teknis."
+    answer: 1,
+    explanation: "Kasi Pemerintahan bertugas menyelenggarakan urusan administrasi pemerintahan desa seperti kependudukan dan kewilayahan."
   },
   {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (22)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Siapa yang memiliki kewenangan menetapkan batas dusun di desa (23)?",
-    "options": [
-      "A. Kepala Dusun",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Camat"
-    ],
-    "answer": 2,
-    "explanation": "Kepala Desa berwenang menetapkan batas dusun setelah melalui musyawarah desa dan kajian teknis."
-  },
-  {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (24)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (25)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Apa peran Kasi Pemerintahan dalam pendataan kependudukan (26)?",
-    "options": [
-      "A. Menyalurkan bantuan sosial",
-      "B. Menyusun laporan keuangan",
-      "C. Menerima dan memverifikasi data warga",
-      "D. Menentukan program kesehatan",
-      "E. Menetapkan keputusan desa"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan berperan dalam menerima, mencatat, dan memverifikasi data kependudukan di desa."
-  },
-  {
-    "q": "Apa peran Kasi Pemerintahan dalam pendataan kependudukan (27)?",
-    "options": [
-      "A. Menyalurkan bantuan sosial",
-      "B. Menyusun laporan keuangan",
-      "C. Menerima dan memverifikasi data warga",
-      "D. Menentukan program kesehatan",
-      "E. Menetapkan keputusan desa"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan berperan dalam menerima, mencatat, dan memverifikasi data kependudukan di desa."
-  },
-  {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (28)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Siapa yang memiliki kewenangan menetapkan batas dusun di desa (29)?",
-    "options": [
-      "A. Kepala Dusun",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Camat"
-    ],
-    "answer": 2,
-    "explanation": "Kepala Desa berwenang menetapkan batas dusun setelah melalui musyawarah desa dan kajian teknis."
-  },
-  {
-    "q": "Siapa yang memiliki kewenangan menetapkan batas dusun di desa (30)?",
-    "options": [
-      "A. Kepala Dusun",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Camat"
-    ],
-    "answer": 2,
-    "explanation": "Kepala Desa berwenang menetapkan batas dusun setelah melalui musyawarah desa dan kajian teknis."
-  },
-  {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (31)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Siapa yang memiliki kewenangan menetapkan batas dusun di desa (32)?",
-    "options": [
-      "A. Kepala Dusun",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Camat"
-    ],
-    "answer": 2,
-    "explanation": "Kepala Desa berwenang menetapkan batas dusun setelah melalui musyawarah desa dan kajian teknis."
-  },
-  {
-    "q": "Apa peran Kasi Pemerintahan dalam pendataan kependudukan (33)?",
-    "options": [
-      "A. Menyalurkan bantuan sosial",
-      "B. Menyusun laporan keuangan",
-      "C. Menerima dan memverifikasi data warga",
-      "D. Menentukan program kesehatan",
-      "E. Menetapkan keputusan desa"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan berperan dalam menerima, mencatat, dan memverifikasi data kependudukan di desa."
-  },
-  {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (34)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Apa peran Kasi Pemerintahan dalam pendataan kependudukan (35)?",
-    "options": [
-      "A. Menyalurkan bantuan sosial",
-      "B. Menyusun laporan keuangan",
-      "C. Menerima dan memverifikasi data warga",
-      "D. Menentukan program kesehatan",
-      "E. Menetapkan keputusan desa"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan berperan dalam menerima, mencatat, dan memverifikasi data kependudukan di desa."
-  },
-  {
-    "q": "Apa peran Kasi Pemerintahan dalam pendataan kependudukan (36)?",
-    "options": [
-      "A. Menyalurkan bantuan sosial",
-      "B. Menyusun laporan keuangan",
-      "C. Menerima dan memverifikasi data warga",
-      "D. Menentukan program kesehatan",
-      "E. Menetapkan keputusan desa"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan berperan dalam menerima, mencatat, dan memverifikasi data kependudukan di desa."
-  },
-  {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (37)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Siapa yang memiliki kewenangan menetapkan batas dusun di desa (38)?",
-    "options": [
-      "A. Kepala Dusun",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Camat"
-    ],
-    "answer": 2,
-    "explanation": "Kepala Desa berwenang menetapkan batas dusun setelah melalui musyawarah desa dan kajian teknis."
-  },
-  {
-    "q": "Apa dasar hukum utama yang mengatur tugas dan fungsi Kasi Pemerintahan desa (39)?",
-    "options": [
-      "A. Perpres No. 12 Tahun 2020",
-      "B. Permendagri No. 84 Tahun 2015",
-      "C. UU No. 23 Tahun 2014",
-      "D. UU No. 6 Tahun 2014",
-      "E. PP No. 43 Tahun 2014"
-    ],
-    "answer": 3,
-    "explanation": "UU No. 6 Tahun 2014 tentang Desa menjadi dasar hukum utama yang mengatur pemerintahan desa termasuk tugas Kasi Pemerintahan."
-  },
-  {
-    "q": "Siapa yang memiliki kewenangan menetapkan batas dusun di desa (40)?",
-    "options": [
-      "A. Kepala Dusun",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Camat"
-    ],
-    "answer": 2,
-    "explanation": "Kepala Desa berwenang menetapkan batas dusun setelah melalui musyawarah desa dan kajian teknis."
-  }
-]
-[
-  {
-    "q": "Apa dokumen penting yang harus diperiksa Kasi Pemerintahan saat menerima laporan penduduk pindah datang? (41)?",
-    "options": [
-      "A. Surat keterangan domisili",
-      "B. Surat pengantar RT/RW",
-      "C. KTP dan KK",
-      "D. Akta kelahiran",
-      "E. SKCK dari kepolisian"
-    ],
-    "answer": 2,
-    "explanation": "KTP dan Kartu Keluarga adalah dokumen dasar yang diperiksa untuk memverifikasi penduduk pindah datang."
-  },
-  {
-    "q": "Kasi Pemerintahan memiliki kewajiban menyusun laporan triwulan tentang... (42)?",
-    "options": [
-      "A. Hasil pembangunan fisik desa",
-      "B. Kegiatan gotong royong",
-      "C. Pengelolaan sampah desa",
-      "D. Perkembangan jumlah penduduk dan kelembagaan",
-      "E. Penyuluhan kesehatan masyarakat"
-    ],
-    "answer": 3,
-    "explanation": "Laporan triwulan Kasi Pemerintahan memuat perkembangan data penduduk dan lembaga masyarakat desa."
-  },
-  {
-    "q": "Dalam menangani konflik batas tanah antar warga, langkah pertama yang harus dilakukan Kasi Pemerintahan adalah... (43)?",
-    "options": [
-      "A. Melapor ke polisi",
-      "B. Membuat surat teguran",
-      "C. Menyusun peta digital",
-      "D. Menyelesaikan secara musyawarah",
-      "E. Menghubungi pihak kecamatan"
-    ],
-    "answer": 3,
-    "explanation": "Musyawarah desa adalah langkah awal yang bijak dan sesuai prosedur dalam menyelesaikan konflik tanah."
-  },
-  {
-    "q": "Apa bentuk koordinasi Kasi Pemerintahan dengan RT dan RW di Desa Ngrayudan? (44)?",
-    "options": [
-      "A. Menentukan lokasi proyek",
-      "B. Menyusun APBDes",
-      "C. Pendataan dan pembaruan struktur kelembagaan",
-      "D. Penagihan pajak bumi bangunan",
-      "E. Menetapkan data pemilih tetap"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan mengoordinasikan data dan struktur RT/RW sebagai bagian dari kelembagaan desa."
-  },
-  {
-    "q": "Siapakah yang berwenang menandatangani surat keterangan domisili warga? (45)?",
-    "options": [
-      "A. Kasi Pelayanan",
-      "B. Ketua RT",
-      "C. Kepala Dusun",
-      "D. Kasi Pemerintahan",
-      "E. Kepala Desa"
-    ],
-    "answer": 4,
-    "explanation": "Meskipun disiapkan oleh Kasi Pemerintahan, surat domisili harus ditandatangani oleh Kepala Desa."
-  },
-  {
-    "q": "Salah satu fungsi Kasi Pemerintahan adalah menyiapkan dokumen dalam pelaksanaan pemilihan... (46)?",
-    "options": [
-      "A. Presiden",
-      "B. Kepala Daerah",
-      "C. BPD",
-      "D. Kepala Desa",
-      "E. Ketua RW"
-    ],
-    "answer": 3,
-    "explanation": "Kasi Pemerintahan membantu dalam administrasi dan penyiapan data untuk pemilihan Kepala Desa."
-  },
-  {
-    "q": "Jika ada warga yang kehilangan KTP, Kasi Pemerintahan dapat membantu dengan... (47)?",
-    "options": [
-      "A. Menerbitkan KTP baru",
-      "B. Menyerahkan ke RT",
-      "C. Membuat surat pengantar ke Dukcapil",
-      "D. Mengganti langsung di desa",
-      "E. Menolak karena bukan kewenangannya"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan menerbitkan surat pengantar resmi untuk mengurus ke Dukcapil."
-  },
-  {
-    "q": "Apa yang dimaksud dengan administrasi tata praja desa? (48)?",
-    "options": [
-      "A. Administrasi keuangan",
-      "B. Administrasi pembangunan",
-      "C. Administrasi pemerintahan",
-      "D. Administrasi sosial budaya",
-      "E. Administrasi pertanahan"
-    ],
-    "answer": 2,
-    "explanation": "Administrasi tata praja berisi dokumen yang menyangkut pengelolaan urusan pemerintahan desa."
-  },
-  {
-    "q": "Dalam pendataan penduduk, Kasi Pemerintahan biasanya bekerja sama dengan... (49)?",
-    "options": [
-      "A. Kaur Keuangan",
-      "B. Kepala Dusun dan RT",
-      "C. Kasi Pelayanan",
-      "D. BPD",
-      "E. Tim Kesehatan"
-    ],
-    "answer": 1,
-    "explanation": "Kepala Dusun dan RT adalah sumber utama data kependudukan dari lapangan."
-  },
-  {
-    "q": "Kasi Pemerintahan bertanggung jawab dalam pengarsipan dokumen seperti... (50)?",
-    "options": [
-      "A. RAB pembangunan",
-      "B. Daftar pemilih tetap",
-      "C. Kartu keluarga dan surat pindah",
-      "D. SPJ keuangan",
-      "E. Surat perintah kerja"
-    ],
-    "answer": 2,
-    "explanation": "Dokumen kependudukan seperti KK dan surat pindah menjadi tanggung jawab Kasi Pemerintahan."
-  }
-]
-[
-  {
-    "q": "Siapa yang berwenang mengesahkan SK pengangkatan Ketua RT di Desa Ngrayudan? (51)?",
-    "options": [
-      "A. Kasi Pemerintahan",
-      "B. Kepala Dusun",
-      "C. Ketua BPD",
-      "D. Sekretaris Desa",
-      "E. Kepala Desa"
-    ],
-    "answer": 4,
-    "explanation": "Kepala Desa menetapkan SK pengangkatan Ketua RT berdasarkan usulan dan verifikasi dari Kasi Pemerintahan."
-  },
-  {
-    "q": "Dalam pendataan penduduk, format baku yang digunakan biasanya berasal dari... (52)?",
-    "options": [
-      "A. Dukcapil",
-      "B. Kecamatan",
-      "C. BPS",
-      "D. Dinas Sosial",
-      "E. Pemerintah Provinsi"
-    ],
-    "answer": 0,
-    "explanation": "Dukcapil merupakan lembaga resmi yang menyediakan format dan sistem pendataan kependudukan nasional."
-  },
-  {
-    "q": "Apa dokumen penting dalam pengajuan kartu keluarga baru? (53)?",
-    "options": [
-      "A. Surat kuasa",
-      "B. Ijazah terakhir",
-      "C. Surat pengantar dari RT/RW dan Kasi Pemerintahan",
-      "D. Bukti bayar PBB",
-      "E. Surat pernyataan ahli waris"
-    ],
-    "answer": 2,
-    "explanation": "Surat pengantar dari RT/RW yang diketahui Kasi Pemerintahan adalah syarat pengajuan KK baru."
-  },
-  {
-    "q": "Tugas utama Kasi Pemerintahan terkait pemetaan wilayah adalah... (54)?",
-    "options": [
-      "A. Membangun jalan",
-      "B. Menyusun peta dusun dan RT",
-      "C. Membuat denah rumah warga",
-      "D. Menentukan lahan pertanian",
-      "E. Mencatat luas rumah warga"
-    ],
-    "answer": 1,
-    "explanation": "Pemetaan dusun dan RT adalah bagian dari penataan wilayah yang dilakukan oleh Kasi Pemerintahan."
-  },
-  {
-    "q": "Apa yang harus dilakukan jika terdapat warga ganda dalam data penduduk? (55)?",
-    "options": [
-      "A. Menghapus secara sepihak",
-      "B. Melaporkan ke Dukcapil",
-      "C. Menyuruh warga pindah",
-      "D. Mengarsipkan sebagai cadangan",
-      "E. Menyusun surat pernyataan palsu"
-    ],
-    "answer": 1,
-    "explanation": "Data ganda harus diklarifikasi dan dilaporkan ke Dukcapil untuk pemutakhiran dan penghapusan yang sah."
-  },
-  {
-    "q": "Dalam pendataan ulang kelembagaan, siapa yang bekerja sama dengan Kasi Pemerintahan? (56)?",
-    "options": [
-      "A. Kaur Umum",
-      "B. Ketua RT/RW dan Kepala Dusun",
-      "C. Pendamping desa",
-      "D. Kasi Pelayanan",
-      "E. Tokoh masyarakat"
-    ],
-    "answer": 1,
-    "explanation": "RT/RW dan Kepala Dusun adalah mitra utama dalam pendataan struktur kelembagaan di tingkat lokal."
-  },
-  {
-    "q": "Salah satu indikator ketertiban administrasi desa adalah... (57)?",
-    "options": [
-      "A. Jumlah proyek pembangunan",
-      "B. Keaktifan Karang Taruna",
-      "C. Kelengkapan data kependudukan dan dokumen kelembagaan",
-      "D. Pendapatan BUMDes",
-      "E. Partisipasi gotong royong"
-    ],
-    "answer": 2,
-    "explanation": "Tertib administrasi ditandai dengan lengkap dan akuratnya data kependudukan serta lembaga desa."
-  },
-  {
-    "q": "Apa yang menjadi alasan penting penyusunan peta RT dan RW? (58)?",
-    "options": [
-      "A. Keperluan pembangunan jembatan",
-      "B. Acuan pengelolaan data dan pelayanan publik",
-      "C. Menentukan harga tanah",
-      "D. Memperoleh bantuan CSR",
-      "E. Penentuan titik pemasangan CCTV"
-    ],
-    "answer": 1,
-    "explanation": "Peta RT/RW menjadi dasar pelayanan, perencanaan pembangunan, dan validasi data masyarakat."
-  },
-  {
-    "q": "Ketika Kepala Dusun mengusulkan penataan ulang wilayah, apa peran Kasi Pemerintahan? (59)?",
-    "options": [
-      "A. Menolak usulan",
-      "B. Meneruskan ke Dinas PU",
-      "C. Membuat dokumentasi awal dan rekomendasi teknis",
-      "D. Membuat berita acara hibah",
-      "E. Menyuruh membuat SPJ"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan membuat kajian teknis dan dokumen administratif terkait penataan wilayah dusun."
-  },
-  {
-    "q": "Dalam hal pemetaan partisipasi warga dalam kelembagaan, data awal diperoleh dari... (60)?",
-    "options": [
-      "A. Data sensus BPS",
-      "B. Pendamping desa",
-      "C. Ketua RT/RW dan tokoh masyarakat",
-      "D. Sekdes",
-      "E. Kecamatan"
-    ],
-    "answer": 2,
-    "explanation": "Ketua RT/RW dan tokoh masyarakat mengetahui langsung siapa yang aktif dan terlibat dalam kelembagaan desa."
-  }
-]
-[
-  {
-    "q": "Apa yang menjadi dasar hukum pelaporan data kependudukan secara berkala oleh desa? (61)?",
-    "options": [
-      "A. Permendagri No. 84 Tahun 2015",
-      "B. UU Desa No. 6 Tahun 2014",
-      "C. Perbup tentang RT/RW",
-      "D. Instruksi Presiden Tahun 2020",
-      "E. Surat Edaran Kecamatan"
-    ],
-    "answer": 0,
-    "explanation": "Permendagri No. 84 Tahun 2015 menjelaskan tugas dan pelaporan data penduduk oleh perangkat desa."
-  },
-  {
-    "q": "Jika terjadi mutasi penduduk secara massal, siapa yang bertugas mengoordinasikan pencatatan dan verifikasi awal? (62)?",
-    "options": [
-      "A. Sekretaris Desa",
-      "B. Kasi Pelayanan",
-      "C. Kasi Pemerintahan",
-      "D. Kepala Dusun",
-      "E. Ketua RW"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan bertanggung jawab atas pencatatan dan validasi data penduduk termasuk perubahan massal."
-  },
-  {
-    "q": "Tujuan utama pendataan kelembagaan di tingkat dusun adalah... (63)?",
-    "options": [
-      "A. Mengetahui tokoh adat",
-      "B. Menentukan insentif perangkat",
-      "C. Menyusun peta sosial",
-      "D. Meningkatkan pengumpulan zakat",
-      "E. Menyiapkan laporan keuangan"
-    ],
-    "answer": 2,
-    "explanation": "Pemetaan lembaga dan struktur sosial digunakan untuk perencanaan sosial desa dan penguatan kelembagaan."
-  },
-  {
-    "q": "Bagaimana peran Kasi Pemerintahan dalam perencanaan pemilihan RT baru? (64)?",
-    "options": [
-      "A. Mengumumkan hasil",
-      "B. Menetapkan jumlah pemilih",
-      "C. Memandu dan mengarsipkan proses pemilihan",
-      "D. Menyiapkan APBDes",
-      "E. Menyediakan logistik pembangunan"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan mendampingi proses administratif dan pencatatan hasil pemilihan RT."
-  },
-  {
-    "q": "Salah satu komponen penting yang harus dicantumkan dalam peta wilayah RT adalah... (65)?",
-    "options": [
-      "A. Gambar rumah kades",
-      "B. Letak pos ronda",
-      "C. Batas RT dan jumlah KK",
-      "D. Lokasi pasar",
-      "E. Tempat wisata"
-    ],
-    "answer": 2,
-    "explanation": "Peta wilayah RT harus menyajikan informasi batas administratif dan jumlah kepala keluarga (KK)."
-  },
-  {
-    "q": "Apa kewajiban Kasi Pemerintahan saat terjadi perubahan struktur RT dan RW? (66)?",
-    "options": [
-      "A. Menyusun daftar pemilih",
-      "B. Menerbitkan surat tugas baru",
-      "C. Memperbaharui data dan arsip kelembagaan",
-      "D. Menyusun RPJMDes",
-      "E. Mengirim surat ke BPD"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan bertanggung jawab memperbaharui data kelembagaan dalam database administrasi desa."
-  },
-  {
-    "q": "Data kependudukan yang tidak valid dapat berdampak pada... (67)?",
-    "options": [
-      "A. Gagal panen",
-      "B. Kenaikan pajak",
-      "C. Kesalahan bantuan dan pemilu",
-      "D. Terhambatnya wisata",
-      "E. Tidak tersedianya air bersih"
-    ],
-    "answer": 2,
-    "explanation": "Data penduduk yang tidak valid berdampak besar terhadap distribusi bantuan dan daftar pemilih."
-  },
-  {
-    "q": "Laporan kelembagaan RT/RW biasanya dibuat dalam periode... (68)?",
-    "options": [
-      "A. Harian",
-      "B. Bulanan",
-      "C. Triwulan",
-      "D. Semester",
-      "E. Tahunan"
-    ],
-    "answer": 4,
-    "explanation": "Rekap dan pelaporan struktur RT/RW umumnya dilakukan setiap tahun."
-  },
-  {
-    "q": "Jika warga membutuhkan surat pengantar pindah, siapa yang menandatangani setelah Kasi Pemerintahan? (69)?",
-    "options": [
-      "A. Ketua RW",
+    q: "Siapa yang memiliki kewenangan menetapkan batas dusun di desa?",
+    options: [
+      "A. Kasi Kesejahteraan",
       "B. Kepala Dusun",
       "C. Kepala Desa",
       "D. Camat",
       "E. Sekretaris Desa"
     ],
-    "answer": 2,
-    "explanation": "Surat resmi seperti surat pindah ditandatangani oleh Kepala Desa setelah diverifikasi oleh Kasi Pemerintahan."
+    answer: 2,
+    explanation: "Kepala Desa menetapkan batas wilayah dusun berdasarkan masukan dari perangkat desa, termasuk Kasi Pemerintahan."
   },
   {
-    "q": "Kasi Pemerintahan dapat mengusulkan pemekaran RT apabila... (70)?",
-    "options": [
-      "A. Jumlah KK melebihi batas optimal",
-      "B. Banyak jalan rusak",
-      "C. Tidak ada balai warga",
-      "D. Ketua RT sudah lama menjabat",
-      "E. Ada pembangunan jembatan"
+    q: "Pelayanan surat pengantar KTP dan KK merupakan tugas...",
+    options: [
+      "A. Sekretaris Desa",
+      "B. Kasi Pelayanan",
+      "C. Kasi Pemerintahan",
+      "D. Kaur Keuangan",
+      "E. Kepala Dusun"
     ],
-    "answer": 0,
-    "explanation": "Pemekaran RT biasanya didasarkan pada beban wilayah dan jumlah kepala keluarga yang terlalu besar."
+    answer: 2,
+    explanation: "Surat-surat kependudukan diurus oleh Kasi Pemerintahan sebagai bagian dari tugas administrasi."
   },
   {
-    "q": "Dalam mendukung ketertiban administrasi, Kasi Pemerintahan perlu melakukan... (71)?",
-    "options": [
-      "A. Rapat mingguan",
-      "B. Pelatihan RT",
-      "C. Penataan arsip dan dokumen",
-      "D. Pengecatan kantor desa",
-      "E. Pemungutan pajak"
-    ],
-    "answer": 2,
-    "explanation": "Penataan dan pengarsipan dokumen sangat penting dalam menjalankan tertib administrasi pemerintahan."
-  },
-  {
-    "q": "Siapa yang menjadi mitra kerja utama Kasi Pemerintahan dalam pendataan jumlah penduduk per RT? (72)?",
-    "options": [
-      "A. Sekdes",
-      "B. Kaur Keuangan",
-      "C. Ketua RT",
-      "D. Pendamping desa",
-      "E. Kasi Pelayanan"
-    ],
-    "answer": 2,
-    "explanation": "Ketua RT mengetahui langsung kondisi dan data jumlah penduduk di wilayahnya."
-  },
-  {
-    "q": "Apa langkah yang harus dilakukan sebelum menetapkan perubahan batas dusun? (73)?",
-    "options": [
-      "A. Membuat berita acara hibah",
-      "B. Mengirim surat ke gubernur",
-      "C. Musyawarah desa dan kajian wilayah",
-      "D. Rapat BPD saja",
-      "E. Keputusan camat"
-    ],
-    "answer": 2,
-    "explanation": "Perubahan batas dusun harus diawali dengan musyawarah desa dan kajian teknis administrasi."
-  },
-  {
-    "q": "Salah satu indikator keberhasilan Kasi Pemerintahan adalah... (74)?",
-    "options": [
-      "A. Peningkatan APBDes",
-      "B. Terpilihnya perangkat baru",
-      "C. Lengkap dan tertibnya data kependudukan dan kelembagaan",
-      "D. Banyaknya surat keluar",
-      "E. Jumlah proyek bangunan"
-    ],
-    "answer": 2,
-    "explanation": "Kinerja Kasi Pemerintahan diukur dari ketertiban administrasi dan kelengkapan data desa."
-  },
-  {
-    "q": "Jika terjadi penggabungan dua RT, siapa yang menyusun konsep SK penggabungan? (75)?",
-    "options": [
-      "A. Kasi Pelayanan",
+    q: "Jika warga ingin mengurus surat pindah domisili, maka yang berwenang membuat surat pengantar adalah...",
+    options: [
+      "A. Kaur Umum",
       "B. Kepala Dusun",
       "C. Kasi Pemerintahan",
-      "D. Sekdes",
-      "E. Kaur Keuangan"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan bertugas menyiapkan konsep administrasi termasuk SK penggabungan RT."
-  },
-  {
-    "q": "Dalam tugasnya, Kasi Pemerintahan berkoordinasi dengan lembaga apa untuk validasi data kemiskinan? (76)?",
-    "options": [
-      "A. Dinas Sosial",
-      "B. Puskesmas",
-      "C. Karang Taruna",
-      "D. Sekretariat Desa",
-      "E. Pendamping PKH"
-    ],
-    "answer": 0,
-    "explanation": "Validasi data kemiskinan biasanya melibatkan Dinas Sosial melalui program verifikasi dan validasi (verivali)."
-  },
-  {
-    "q": "Apa yang dimaksud dengan dokumen teknis wilayah? (77)?",
-    "options": [
-      "A. Akta kelahiran warga",
-      "B. Surat keputusan RT",
-      "C. Peta dan batas administrasi dusun dan RT",
-      "D. Anggaran kegiatan desa",
-      "E. Proposal bantuan CSR"
-    ],
-    "answer": 2,
-    "explanation": "Dokumen teknis wilayah memuat peta dan batas resmi wilayah administratif di desa."
-  },
-  {
-    "q": "Pengelolaan dokumen warga seperti KK, KTP, dan surat pindah ditangani oleh... (78)?",
-    "options": [
-      "A. Kasi Pelayanan",
-      "B. Sekdes",
-      "C. Kaur Keuangan",
-      "D. Kasi Pemerintahan",
-      "E. Kepala Dusun"
-    ],
-    "answer": 3,
-    "explanation": "Dokumen kependudukan merupakan urusan langsung di bawah Kasi Pemerintahan."
-  },
-  {
-    "q": "Kelembagaan seperti Siskamling dan Linmas dikendalikan oleh... (79)?",
-    "options": [
-      "A. Kasi Pelayanan",
-      "B. Kasi Kesejahteraan",
-      "C. Kepala Dusun",
-      "D. Kasi Pemerintahan",
-      "E. Sekdes"
-    ],
-    "answer": 3,
-    "explanation": "Kasi Pemerintahan membina dan mengoordinasi lembaga keamanan seperti Siskamling dan Linmas."
-  },
-  {
-    "q": "Jika ada warga meminta surat keterangan belum menikah, siapa yang menyiapkan draftnya? (80)?",
-    "options": [
-      "A. Sekdes",
-      "B. Kasi Pelayanan",
-      "C. Kaur Keuangan",
-      "D. Kasi Pemerintahan",
-      "E. Ketua RT"
-    ],
-    "answer": 3,
-    "explanation": "Surat-surat keterangan umum disiapkan oleh Kasi Pemerintahan dan ditandatangani Kepala Desa."
-  }
-]
-[
-  {
-    "q": "Apa tindakan yang tepat jika ditemukan data warga meninggal namun masih tercatat aktif di desa? (81)?",
-    "options": [
-      "A. Menghapus langsung dari data desa",
-      "B. Melaporkan ke BPD",
-      "C. Meminta keluarga membuat surat keterangan kematian",
-      "D. Menunggu laporan dari kecamatan",
-      "E. Menyampaikan ke kepala dusun saja"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan harus meminta dokumen resmi dari keluarga untuk melakukan update data secara sah."
-  },
-  {
-    "q": "Surat keterangan tidak mampu (SKTM) yang dikeluarkan desa biasanya diajukan melalui... (82)?",
-    "options": [
-      "A. Ketua RW",
-      "B. Kasi Pemerintahan",
-      "C. Kepala Dusun",
       "D. Kaur Keuangan",
-      "E. Sekretaris Desa"
+      "E. Kasi Kesejahteraan"
     ],
-    "answer": 1,
-    "explanation": "Warga mengajukan SKTM melalui Kasi Pemerintahan untuk proses administrasi dan verifikasi."
+    answer: 2,
+    explanation: "Surat pindah domisili termasuk dokumen kependudukan yang menjadi kewenangan Kasi Pemerintahan."
   },
   {
-    "q": "Salah satu tujuan pendataan lembaga keagamaan di desa adalah... (83)?",
-    "options": [
-      "A. Menentukan tarif zakat",
-      "B. Menyusun APBDes",
-      "C. Mendukung perencanaan sosial keagamaan",
-      "D. Menyiapkan lokasi wisata religi",
-      "E. Membuat laporan kegiatan desa"
-    ],
-    "answer": 2,
-    "explanation": "Pendataan lembaga keagamaan membantu perencanaan kegiatan keagamaan dan sosial di masyarakat."
-  },
-  {
-    "q": "Berikut ini bukan bagian dari data kelembagaan yang dicatat oleh Kasi Pemerintahan... (84)?",
-    "options": [
-      "A. Data jumlah RT dan RW",
-      "B. Susunan pengurus Karang Taruna",
-      "C. Struktur BPD",
-      "D. Rencana Anggaran Belanja Desa",
-      "E. Jumlah Linmas"
-    ],
-    "answer": 3,
-    "explanation": "RABDes disusun oleh Kaur Keuangan dan tim perencana, bukan oleh Kasi Pemerintahan."
-  },
-  {
-    "q": "Salah satu indikator desa tertib administrasi adalah... (85)?",
-    "options": [
-      "A. Banyaknya rapat desa",
-      "B. Pendataan dan pembaruan dokumen secara rutin",
-      "C. Jumlah pembangunan fisik",
-      "D. Keuntungan BUMDes",
-      "E. Rapat rutin RT/RW"
-    ],
-    "answer": 1,
-    "explanation": "Desa dikatakan tertib jika data dan dokumen administratifnya terus diperbarui secara berkala."
-  },
-  {
-    "q": "Untuk memvalidasi warga yang mengajukan KTP baru, Kasi Pemerintahan dapat meminta... (86)?",
-    "options": [
-      "A. Surat domisili dari RT",
-      "B. Bukti vaksinasi",
-      "C. Ijazah terakhir",
-      "D. Surat kepemilikan rumah",
-      "E. Surat pernyataan tokoh masyarakat"
-    ],
-    "answer": 0,
-    "explanation": "Surat domisili dari RT merupakan bukti awal bahwa warga memang tinggal di wilayah tersebut."
-  },
-  {
-    "q": "Apa yang harus dilakukan Kasi Pemerintahan jika terdapat warga asing tinggal di wilayah desa? (87)?",
-    "options": [
-      "A. Mengusir warga tersebut",
-      "B. Membuat laporan ke polisi",
-      "C. Mencatat dan melaporkan ke Dukcapil dan kecamatan",
-      "D. Memberi KTP langsung",
-      "E. Menyembunyikan informasi"
-    ],
-    "answer": 2,
-    "explanation": "Keberadaan warga asing harus dilaporkan ke Dukcapil dan aparat wilayah untuk pendataan resmi."
-  },
-  {
-    "q": "Apa fungsi utama dari peta wilayah administrasi RT dan RW? (88)?",
-    "options": [
-      "A. Sebagai syarat mendapat bantuan",
-      "B. Untuk promosi wisata desa",
-      "C. Mempermudah pelayanan dan pendataan",
-      "D. Untuk membuat kalender desa",
-      "E. Sebagai bahan presentasi lomba desa"
-    ],
-    "answer": 2,
-    "explanation": "Peta wilayah sangat penting untuk pelayanan publik dan penataan administrasi desa."
-  },
-  {
-    "q": "Jika ditemukan perbedaan nama warga di KTP dan KK, maka... (89)?",
-    "options": [
-      "A. Diabaikan saja",
-      "B. Disesuaikan dengan nama panggilan",
-      "C. Harus diklarifikasi ke Dukcapil dengan surat pernyataan",
-      "D. Dihapus dari data desa",
-      "E. Dilaporkan ke BPD"
-    ],
-    "answer": 2,
-    "explanation": "Nama yang tidak konsisten harus diklarifikasi dengan dokumen resmi dari Dukcapil agar data sinkron."
-  },
-  {
-    "q": "Dalam kegiatan pemilu, Kasi Pemerintahan biasanya berperan dalam... (90)?",
-    "options": [
-      "A. Menyusun jadwal kampanye",
-      "B. Mempromosikan calon tertentu",
-      "C. Menyediakan data jumlah penduduk dan TPS",
-      "D. Menyusun visi misi calon",
-      "E. Mengelola dana kampanye"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan membantu panitia pemilu dengan menyediakan data dasar seperti jumlah penduduk dan wilayah TPS."
-  },
-  {
-    "q": "Jika Kepala Dusun mengusulkan pembentukan RT baru, langkah awal Kasi Pemerintahan adalah... (91)?",
-    "options": [
-      "A. Mengadakan pemilu RT",
-      "B. Menyusun SK",
-      "C. Melakukan kajian jumlah KK dan wilayah",
-      "D. Menolak karena tidak sesuai peraturan",
-      "E. Mengusulkan ke kabupaten"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan harus melakukan kajian teknis sebelum pembentukan RT baru bisa dilakukan."
-  },
-  {
-    "q": "Apa bentuk pelaporan rutin yang menjadi kewajiban Kasi Pemerintahan? (92)?",
-    "options": [
-      "A. Laporan keuangan desa",
-      "B. Laporan penyerapan dana",
-      "C. Laporan data penduduk dan kelembagaan",
-      "D. Laporan kegiatan Karang Taruna",
-      "E. Laporan pembangunan fisik"
-    ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan wajib membuat laporan tentang perkembangan data penduduk dan kelembagaan desa."
-  },
-  {
-    "q": "Dalam struktur kelembagaan desa, Linmas berada di bawah koordinasi... (93)?",
-    "options": [
-      "A. Sekretaris Desa",
-      "B. Kepala Dusun",
-      "C. Kasi Kesejahteraan",
-      "D. Kasi Pemerintahan",
-      "E. Ketua BPD"
-    ],
-    "answer": 3,
-    "explanation": "Linmas sebagai bagian dari ketertiban umum desa dikoordinasikan oleh Kasi Pemerintahan."
-  },
-  {
-    "q": "Pembaruan data KK, KTP, dan mutasi masuk/keluar warga sebaiknya dilakukan... (94)?",
-    "options": [
-      "A. Setiap 5 tahun",
-      "B. Hanya jika ada pemilu",
-      "C. Setiap bulan atau triwulan",
-      "D. Jika diminta camat",
-      "E. Jika ada permintaan warga"
-    ],
-    "answer": 2,
-    "explanation": "Data kependudukan harus diperbarui secara berkala untuk memastikan validitas administrasi."
-  },
-  {
-    "q": "Ketika warga mengurus surat pengantar KTP hilang, siapa yang menanganinya? (95)?",
-    "options": [
-      "A. Kasi Pelayanan",
-      "B. Kasi Pemerintahan",
-      "C. Sekretaris Desa",
-      "D. Ketua RW",
-      "E. Kepala Dusun"
-    ],
-    "answer": 1,
-    "explanation": "Surat pengantar untuk dokumen kependudukan ditangani oleh Kasi Pemerintahan."
-  },
-  {
-    "q": "Peta partisipasi RT/RW dalam kegiatan desa dapat membantu Kasi Pemerintahan dalam... (96)?",
-    "options": [
-      "A. Menyusun SK BPD",
-      "B. Menentukan insentif RT",
-      "C. Menilai keberhasilan pembangunan",
-      "D. Menyusun prioritas pembinaan kelembagaan",
-      "E. Mengajukan proposal ke kecamatan"
-    ],
-    "answer": 3,
-    "explanation": "Peta partisipasi digunakan untuk memetakan kekuatan kelembagaan dan strategi pembinaan."
-  },
-  {
-    "q": "Salah satu dokumen penting yang harus dikelola oleh Kasi Pemerintahan dalam urusan batas wilayah adalah... (97)?",
-    "options": [
-      "A. RPJMDes",
-      "B. Peta RTRW kabupaten",
-      "C. Dokumen berita acara kesepakatan batas",
-      "D. Akta jual beli tanah",
-      "E. SK pengangkatan Kaur"
-    ],
-    "answer": 2,
-    "explanation": "Dokumen berita acara kesepakatan batas sangat penting dalam administrasi dan penyelesaian konflik batas wilayah."
-  },
-  {
-    "q": "Jika RT/RW belum memiliki SK aktif, apa yang sebaiknya dilakukan Kasi Pemerintahan? (98)?",
-    "options": [
-      "A. Membiarkan tetap berjalan",
-      "B. Menonaktifkan RT tersebut",
-      "C. Segera menyusun dan mengusulkan SK baru",
-      "D. Melapor ke camat",
-      "E. Mengganti perangkat"
-    ],
-    "answer": 2,
-    "explanation": "SK RT/RW yang aktif penting sebagai dasar hukum pelaksanaan tugas mereka di masyarakat."
-  },
-  {
-    "q": "Surat Keterangan Domisili diterbitkan oleh Kasi Pemerintahan dan ditandatangani oleh... (99)?",
-    "options": [
-      "A. Ketua RT",
-      "B. Kasi Pelayanan",
-      "C. Kepala Desa",
-      "D. Sekretaris Desa",
-      "E. Kepala Dusun"
-    ],
-    "answer": 2,
-    "explanation": "Walau disiapkan oleh Kasi Pemerintahan, surat domisili tetap ditandatangani secara resmi oleh Kepala Desa."
-  },
-  {
-    "q": "Tujuan utama dokumentasi kegiatan administrasi pemerintahan desa adalah... (100)?",
-    "options": [
-      "A. Menyimpan foto kegiatan",
-      "B. Memenuhi syarat bantuan",
-      "C. Menyediakan bukti dan laporan yang sah dan akuntabel",
-      "D. Membuat dokumenter desa",
-      "E. Dipamerkan saat lomba desa"
-    ],
-    "answer": 2,
-    "explanation": "Dokumentasi administrasi menjadi bagian dari akuntabilitas dan transparansi tata kelola pemerintahan desa."
-  }
-]
-[
-  {
-    "q": "Apa yang menjadi tanggung jawab utama Kasi Pemerintahan di Desa Ngrayudan?",
-    "options": [
-      "A. Mengelola administrasi kependudukan",
-      "B. Menangani pengelolaan wisata",
-      "C. Menyusun laporan keuangan desa",
-      "D. Melakukan sosialisasi program kesehatan",
-      "E. Menyusun data bantuan sosial"
-    ],
-    "answer": 0,
-    "explanation": "Kasi Pemerintahan bertugas dalam urusan tata pemerintahan, termasuk pengelolaan administrasi kependudukan."
-  },
-  {
-    "q": "Siapa yang menjadi atasan langsung Kasi Pemerintahan di desa?",
-    "options": [
+    q: "Kasi Pemerintahan bertanggung jawab langsung kepada...",
+    options: [
       "A. Camat",
-      "B. Ketua RT",
+      "B. Ketua BPD",
       "C. Sekretaris Desa",
       "D. Kepala Desa",
-      "E. Ketua BPD"
+      "E. Kepala Dusun"
     ],
-    "answer": 3,
-    "explanation": "Kasi Pemerintahan bertanggung jawab langsung kepada Kepala Desa."
+    answer: 3,
+    explanation: "Semua perangkat desa bertanggung jawab kepada Kepala Desa sesuai struktur organisasi."
   },
   {
-    "q": "Apa dokumen yang dikelola oleh Kasi Pemerintahan terkait wilayah desa?",
-    "options": [
-      "A. Perdes Keuangan",
-      "B. Surat Keputusan RT",
-      "C. Dokumen batas wilayah desa",
-      "D. Daftar penerima bantuan PKH",
-      "E. Rencana Anggaran Biaya"
+    q: "Fungsi administrasi kewilayahan di desa termasuk...",
+    options: [
+      "A. Pembangunan saluran irigasi",
+      "B. Penataan batas wilayah dan peta desa",
+      "C. Pemungutan pajak bumi dan bangunan",
+      "D. Penyuluhan pertanian",
+      "E. Penyusunan APBDes"
     ],
-    "answer": 2,
-    "explanation": "Dokumen batas wilayah desa merupakan bagian dari tanggung jawab Kasi Pemerintahan."
+    answer: 1,
+    explanation: "Penataan batas wilayah termasuk dalam urusan kewilayahan, yang menjadi tugas Kasi Pemerintahan."
   },
   {
-    "q": "Jika ada warga yang ingin membuat surat pindah domisili, siapa yang mengurus administrasinya di desa?",
-    "options": [
-      "A. Kasi Kesejahteraan",
+    q: "Berikut ini merupakan dokumen yang diurus oleh Kasi Pemerintahan, kecuali...",
+    options: [
+      "A. Surat pengantar pembuatan e-KTP",
+      "B. Surat keterangan domisili",
+      "C. Surat keterangan belum menikah",
+      "D. Proposal pengadaan ternak sapi",
+      "E. Surat pengantar pindah keluar"
+    ],
+    answer: 3,
+    explanation: "Proposal pengadaan ternak adalah urusan kesejahteraan masyarakat, bukan pemerintahan."
+  },
+  {
+    q: "Jika ada usulan pemekaran wilayah dusun, perangkat desa yang wajib mengkaji secara administratif adalah...",
+    options: [
+      "A. Kaur Keuangan",
+      "B. Kasi Pelayanan",
+      "C. Kasi Pemerintahan",
+      "D. Sekretaris Desa",
+      "E. Kaur Perencanaan"
+    ],
+    answer: 2,
+    explanation: "Pemekaran wilayah adalah bagian dari administrasi kewilayahan di bawah Kasi Pemerintahan."
+  },
+  {
+    q: "Surat pengantar nikah biasanya diterbitkan oleh...",
+    options: [
+      "A. Kepala Dusun",
       "B. Kaur Umum",
+      "C. Kasi Kesejahteraan",
+      "D. Kasi Pemerintahan",
+      "E. Sekretaris Desa"
+    ],
+    answer: 3,
+    explanation: "Administrasi terkait pernikahan termasuk dalam urusan kependudukan yang diurus oleh Kasi Pemerintahan."
+  },
+  {
+    q: "Pemilihan Kepala Dusun difasilitasi oleh...",
+    options: [
+      "A. Kasi Kesejahteraan",
+      "B. Kasi Pemerintahan",
+      "C. Kaur Umum",
+      "D. Ketua BPD",
+      "E. Camat"
+    ],
+    answer: 1,
+    explanation: "Kasi Pemerintahan menyelenggarakan urusan pemilihan perangkat, termasuk Kepala Dusun."
+  },
+  {
+    q: "Berikut ini yang bukan termasuk dalam tugas Kasi Pemerintahan adalah...",
+    options: [
+      "A. Pengelolaan dokumen kependudukan",
+      "B. Penanganan konflik batas wilayah dusun",
+      "C. Pengurusan administrasi pemilu",
+      "D. Pengawasan dana desa",
+      "E. Penataan tata ruang wilayah desa"
+    ],
+    answer: 3,
+    explanation: "Pengawasan dana desa merupakan tanggung jawab Kepala Desa dan Kaur Keuangan, bukan Kasi Pemerintahan."
+  },
+  {
+    q: "Jika terjadi sengketa batas RT/RW, siapa yang bertugas mencatat dan menyusun laporan awal?",
+    options: [
+      "A. Sekretaris Desa",
+      "B. Kasi Pelayanan",
+      "C. Kasi Pemerintahan",
+      "D. Kepala Dusun",
+      "E. Ketua RT"
+    ],
+    answer: 2,
+    explanation: "Sengketa wilayah adalah urusan kewilayahan, yang dicatat dan ditangani secara administratif oleh Kasi Pemerintahan."
+  },
+  {
+    q: "Surat keterangan domisili untuk usaha mikro diterbitkan oleh...",
+    options: [
+      "A. Kaur Keuangan",
+      "B. Sekretaris Desa",
+      "C. Kasi Pemerintahan",
+      "D. Kepala Dusun",
+      "E. Kasi Kesejahteraan"
+    ],
+    answer: 2,
+    explanation: "Dokumen domisili adalah bagian dari data kependudukan yang diurus Kasi Pemerintahan."
+  },
+  {
+    q: "Siapa yang berhak mengusulkan penataan wilayah dusun kepada Kepala Desa?",
+    options: [
+      "A. Ketua BPD",
+      "B. Sekretaris Desa",
+      "C. Kasi Pemerintahan",
+      "D. Kasi Pelayanan",
+      "E. Kepala Dusun"
+    ],
+    answer: 2,
+    explanation: "Kasi Pemerintahan bertugas mengusulkan dan mengkaji penataan wilayah kepada Kepala Desa."
+  },
+  {
+    q: "Dalam pelaksanaan administrasi kependudukan, Kasi Pemerintahan bekerja sama dengan...",
+    options: [
+      "A. Dispendukcapil",
+      "B. Kementerian Sosial",
+      "C. Dinas PU",
+      "D. Dinas Pertanian",
+      "E. Kantor Pajak"
+    ],
+    answer: 0,
+    explanation: "Urusan data kependudukan harus terkoordinasi dengan Dinas Kependudukan dan Pencatatan Sipil."
+  },
+  {
+    q: "Lembaga yang dapat memberi masukan kepada Kasi Pemerintahan terkait rukun tetangga adalah...",
+    options: [
+      "A. Karang Taruna",
+      "B. BPD",
+      "C. LPM",
+      "D. PKK",
+      "E. RT/RW"
+    ],
+    answer: 4,
+    explanation: "RT/RW sebagai perpanjangan tangan desa memberikan masukan administratif kepada Kasi Pemerintahan."
+  },
+  {
+    q: "Salah satu syarat administrasi untuk menikah adalah surat pengantar dari...",
+    options: [
+      "A. RT",
+      "B. RW",
       "C. Kepala Dusun",
       "D. Kasi Pemerintahan",
+      "E. KUA"
+    ],
+    answer: 3,
+    explanation: "Surat pengantar resmi dari Kasi Pemerintahan dibutuhkan sebelum ke KUA."
+  },
+  {
+    q: "Dalam proses pemutakhiran data penduduk, Kasi Pemerintahan wajib berkoordinasi dengan...",
+    options: [
+      "A. Camat",
+      "B. BPD",
+      "C. RT/RW",
+      "D. Sekdes",
+      "E. Kasi Pelayanan"
+    ],
+    answer: 2,
+    explanation: "RT/RW mengetahui kondisi riil penduduk sehingga penting dalam pemutakhiran data."
+  },
+  {
+    q: "Surat keterangan belum menikah biasanya dibutuhkan untuk...",
+    options: [
+      "A. Melamar pekerjaan",
+      "B. Membuka rekening bank",
+      "C. Pendaftaran KTP",
+      "D. Pengurusan SKCK",
+      "E. Pernikahan"
+    ],
+    answer: 4,
+    explanation: "Surat belum menikah menjadi syarat dalam pengurusan pernikahan di KUA."
+  },
+  {
+    q: "Jika ditemukan perbedaan data tempat lahir di KTP dan KK, langkah pertama adalah...",
+    options: [
+      "A. Melapor ke Kecamatan",
+      "B. Melapor ke KUA",
+      "C. Melapor ke Kasi Pemerintahan",
+      "D. Melapor ke Polisi",
+      "E. Mengurus akta lahir baru"
+    ],
+    answer: 2,
+    explanation: "Kasi Pemerintahan mengurus verifikasi dan surat pengantar koreksi ke Disdukcapil."
+  },
+  {
+    q: "Undang-Undang yang menjadi dasar hukum penyelenggaraan pemerintahan desa adalah...",
+    options: [
+      "A. UU No. 23 Tahun 2014",
+      "B. UU No. 11 Tahun 2008",
+      "C. UU No. 6 Tahun 2014",
+      "D. UU No. 17 Tahun 2003",
+      "E. UU No. 20 Tahun 2003"
+    ],
+    answer: 2,
+    explanation: "UU No. 6 Tahun 2014 mengatur penyelenggaraan pemerintahan desa, termasuk perangkat desa seperti Kasi Pemerintahan."
+  },
+  {
+    q: "Siapa yang berwenang menetapkan dan mengangkat perangkat desa?",
+    options: [
+      "A. Camat",
+      "B. BPD",
+      "C. Kepala Desa",
+      "D. Sekretaris Desa",
+      "E. Kasi Pemerintahan"
+    ],
+    answer: 2,
+    explanation: "Kepala Desa memiliki wewenang mengangkat dan memberhentikan perangkat desa berdasarkan peraturan."
+  },
+  {
+    q: "Dalam pelaksanaan tugas, Kasi Pemerintahan harus berkoordinasi langsung dengan...",
+    options: [
+      "A. BPD",
+      "B. Camat",
+      "C. Sekretaris Desa",
+      "D. Ketua LPM",
+      "E. Kepala Dusun"
+    ],
+    answer: 2,
+    explanation: "Dalam administrasi desa, Kasi Pemerintahan bekerja di bawah koordinasi Sekretaris Desa dan bertanggung jawab kepada Kepala Desa."
+  },
+  {
+    q: "Permendagri yang mengatur struktur organisasi dan tata kerja pemerintah desa adalah...",
+    options: [
+      "A. Permendagri No. 83 Tahun 2015",
+      "B. Permendagri No. 84 Tahun 2015",
+      "C. Permendagri No. 113 Tahun 2014",
+      "D. Permendagri No. 1 Tahun 2017",
+      "E. Permendagri No. 20 Tahun 2018"
+    ],
+    answer: 1,
+    explanation: "Permendagri 84 Tahun 2015 menjelaskan susunan organisasi pemerintahan desa, termasuk pembagian tugas Kasi."
+  },
+  {
+    q: "Bila terjadi gangguan ketertiban di lingkungan dusun, Kasi Pemerintahan sebaiknya...",
+    options: [
+      "A. Memanggil pihak keamanan desa",
+      "B. Melapor ke Polsek langsung",
+      "C. Menyelesaikan secara pribadi",
+      "D. Berkoordinasi dengan Kepala Dusun dan Babinsa/Bhabinkamtibmas",
+      "E. Menyebarkan informasi lewat media sosial desa"
+    ],
+    answer: 3,
+    explanation: "Koordinasi dengan unsur keamanan setempat adalah bagian dari penanganan ketertiban umum oleh Kasi Pemerintahan."
+  },
+  {
+    q: "Yang tidak termasuk dalam urusan pemerintahan desa adalah...",
+    options: [
+      "A. Ketenteraman dan ketertiban umum",
+      "B. Administrasi kependudukan",
+      "C. Kesehatan masyarakat",
+      "D. Pembentukan RT/RW",
+      "E. Penataan wilayah"
+    ],
+    answer: 2,
+    explanation: "Kesehatan masyarakat umumnya masuk dalam urusan kesejahteraan, bukan pemerintahan desa."
+  },
+  {
+    q: "Dokumen yang digunakan untuk mencatat peristiwa penting seperti kelahiran dan kematian adalah...",
+    options: [
+      "A. Buku Induk Warga",
+      "B. Buku Administrasi Umum",
+      "C. Buku Mutasi Penduduk",
+      "D. Buku Data RT/RW",
+      "E. Buku Rekap Bantuan"
+    ],
+    answer: 2,
+    explanation: "Buku mutasi penduduk mencatat perubahan jumlah penduduk karena lahir, mati, pindah, atau datang."
+  },
+  {
+    q: "Laporan kegiatan Kasi Pemerintahan disampaikan secara berkala kepada...",
+    options: [
+      "A. BPD",
+      "B. Kaur Keuangan",
+      "C. Sekretaris Desa",
+      "D. Camat",
+      "E. Ketua RT"
+    ],
+    answer: 2,
+    explanation: "Laporan disampaikan kepada Sekdes untuk direkap dan dijadikan bagian dari laporan kinerja pemerintah desa."
+  },
+  {
+    q: "Dalam penanganan administrasi bencana skala kecil di desa, Kasi Pemerintahan berperan dalam...",
+    options: [
+      "A. Menyusun RKPDes",
+      "B. Melakukan pendataan korban dan wilayah terdampak",
+      "C. Menyalurkan bantuan pangan",
+      "D. Menyediakan tenda darurat",
+      "E. Mengusulkan pembangunan jembatan"
+    ],
+    answer: 1,
+    explanation: "Pendataan dan pelaporan adalah peran awal yang penting dalam situasi darurat."
+  },
+  {
+    q: "Saat ada perubahan nama atau status pekerjaan di KK, siapa yang pertama menerima dan memproses berkasnya?",
+    options: [
+      "A. Kaur Keuangan",
+      "B. Kepala Dusun",
+      "C. Kasi Pemerintahan",
+      "D. Kasi Pelayanan",
+      "E. Sekdes"
+    ],
+    answer: 2,
+    explanation: "Perubahan elemen data kependudukan ditangani oleh Kasi Pemerintahan."
+  },
+  {
+    q: "Pengajuan pendirian RT baru diusulkan oleh warga kepada...",
+    options: [
+      "A. Kepala Dusun",
+      "B. BPD",
+      "C. Kepala Desa melalui Kasi Pemerintahan",
+      "D. Camat",
+      "E. Kaur Umum"
+    ],
+    answer: 2,
+    explanation: "Pengajuan pembentukan RT/RW baru biasanya melalui proses administrasi Kasi Pemerintahan."
+  },
+  {
+    q: "Siapa yang melakukan verifikasi awal jika ditemukan warga memiliki KTP ganda?",
+    options: [
+      "A. Camat",
+      "B. Kasi Pemerintahan",
+      "C. Sekretaris Desa",
+      "D. Kepala Dusun",
       "E. Kaur Keuangan"
     ],
-    "answer": 3,
-    "explanation": "Pengurusan surat pindah domisili merupakan bagian dari urusan kependudukan, tanggung jawab Kasi Pemerintahan."
+    answer: 1,
+    explanation: "Verifikasi data kependudukan adalah wewenang Kasi Pemerintahan."
   },
   {
-    "q": "Kegiatan berikut yang tidak termasuk tugas Kasi Pemerintahan adalah...",
-    "options": [
-      "A. Penataan kelembagaan desa",
-      "B. Penanganan data penduduk",
-      "C. Pengelolaan RT dan RW",
-      "D. Pemasangan lampu jalan",
-      "E. Penataan batas dusun"
+    q: "Surat keterangan untuk pindah domisili ke luar kabupaten diterbitkan oleh...",
+    options: [
+      "A. Kaur Perencanaan",
+      "B. Kaur Keuangan",
+      "C. Kepala Dusun",
+      "D. Kasi Pemerintahan",
+      "E. Kasi Pelayanan"
     ],
-    "answer": 3,
-    "explanation": "Pemasangan lampu jalan merupakan kegiatan fisik yang dikelola oleh seksi teknis atau kaur pembangunan, bukan Kasi Pemerintahan."
+    answer: 3,
+    explanation: "Semua urusan surat pindah ditangani oleh Kasi Pemerintahan."
   },
   {
-    "q": "Dalam musyawarah desa tentang penetapan batas dusun di Ngrayudan, peran Kasi Pemerintahan adalah...",
-    "options": [
-      "A. Pimpinan rapat",
-      "B. Dokumentasi dan publikasi",
-      "C. Fasilitator teknis data wilayah",
-      "D. Penyaji anggaran",
-      "E. Ketua tim pelaksana pembangunan"
+    q: "Apa yang menjadi indikator tertib administrasi pemerintahan desa?",
+    options: [
+      "A. Banyaknya kegiatan pembangunan",
+      "B. Tersusunnya buku-buku administrasi secara lengkap dan tepat waktu",
+      "C. Adanya acara seremonial desa",
+      "D. Jumlah warga miskin",
+      "E. Banyaknya bantuan sosial"
     ],
-    "answer": 2,
-    "explanation": "Kasi Pemerintahan memiliki peran sebagai fasilitator dan penyusun data teknis wilayah desa."
+    answer: 1,
+    explanation: "Administrasi yang tertib tercermin dari dokumen dan pelaporan yang lengkap dan akurat."
   },
   {
-    "q": "Apa istilah lain dari 'administrasi pemerintahan desa' yang menjadi tugas Kasi Pemerintahan?",
-    "options": [
-      "A. Administrasi logistik",
-      "B. Administrasi keuangan",
-      "C. Administrasi tata praja",
-      "D. Administrasi kependudukan",
-      "E. Administrasi hibah"
+    q: "Jika ditemukan warga asing tinggal lebih dari 6 bulan di desa, maka...",
+    options: [
+      "A. Tidak perlu dilaporkan",
+      "B. Wajib didata oleh Kasi Pemerintahan dan dilaporkan ke Disdukcapil",
+      "C. Harus segera diusir",
+      "D. Cukup dilaporkan ke RT",
+      "E. Diserahkan ke Kasi Kesejahteraan"
     ],
-    "answer": 2,
-    "explanation": "Tugas Kasi Pemerintahan sering disebut dengan administrasi tata praja."
+    answer: 1,
+    explanation: "Warga asing yang menetap harus didata dan dilaporkan sebagai bagian dari pengawasan kependudukan."
   },
   {
-    "q": "Surat keterangan domisili yang diterbitkan oleh desa harus ditandatangani oleh...",
-    "options": [
+    q: "Lembaga yang bertugas memberi pertimbangan terhadap peraturan desa adalah...",
+    options: [
+      "A. Sekretariat Desa",
+      "B. Kasi Pemerintahan",
+      "C. BPD",
+      "D. Kecamatan",
+      "E. Dinas PMD"
+    ],
+    answer: 2,
+    explanation: "BPD (Badan Permusyawaratan Desa) berfungsi sebagai mitra legislatif desa."
+  },
+  {
+    q: "Dalam pengelolaan arsip surat menyurat, Kasi Pemerintahan harus bekerja sama dengan...",
+    options: [
       "A. Kasi Pelayanan",
+      "B. Kaur Umum",
+      "C. Kepala Dusun",
+      "D. Kasi Kesejahteraan",
+      "E. Sekretaris BPD"
+    ],
+    answer: 1,
+    explanation: "Kaur Umum bertanggung jawab atas kesekretariatan, termasuk arsip dan surat-menyurat."
+  },
+  {
+    q: "Dalam hal pengusulan perubahan status dusun menjadi desa persiapan, perangkat yang dilibatkan adalah...",
+    options: [
+      "A. Kasi Pelayanan dan Kaur Keuangan",
+      "B. Kasi Pemerintahan dan Sekdes",
+      "C. Ketua RT dan RW",
+      "D. Kasi Kesejahteraan",
+      "E. Bendahara Desa"
+    ],
+    answer: 1,
+    explanation: "Proses perubahan status wilayah administratif menjadi desa persiapan melibatkan Sekdes dan Kasi Pemerintahan."
+  },
+  {
+    q: "Jika seorang warga ingin membuat surat keterangan tidak mampu (SKTM), siapa yang menandatangani surat pengantar dari desa?",
+    options: [
+      "A. Kaur Keuangan",
       "B. Kasi Pemerintahan",
       "C. Kepala Dusun",
       "D. Sekretaris Desa",
       "E. Kepala Desa"
     ],
-    "answer": 4,
-    "explanation": "Surat keterangan domisili diterbitkan oleh Kasi Pemerintahan, namun ditandatangani oleh Kepala Desa."
+    answer: 4,
+    explanation: "Surat resmi selalu ditandatangani oleh Kepala Desa setelah diproses oleh perangkat seperti Kasi Pemerintahan."
   },
   {
-    "q": "Dalam hal penataan kelembagaan masyarakat seperti RT dan RW, Kasi Pemerintahan bertugas untuk...",
-    "options": [
-      "A. Menyalurkan dana insentif",
-      "B. Menentukan jumlah RT",
-      "C. Menyusun SK pengangkatan",
-      "D. Melatih pengurus RT",
-      "E. Melaksanakan pendataan dan pelaporan"
+    q: "Dalam upaya menjaga ketertiban umum, kegiatan ronda malam biasanya difasilitasi oleh...",
+    options: [
+      "A. Kaur Keuangan",
+      "B. Kepala Dusun",
+      "C. Kasi Pemerintahan",
+      "D. Ketua LPM",
+      "E. Kasi Pelayanan"
     ],
-    "answer": 4,
-    "explanation": "Pendataan dan pelaporan kelembagaan masyarakat seperti RT/RW adalah bagian dari tugas Kasi Pemerintahan."
+    answer: 2,
+    explanation: "Ketertiban dan keamanan lingkungan adalah bagian dari tugas Kasi Pemerintahan bersama warga dan lembaga terkait."
   },
-  {
-    "q": "Dokumen yang disiapkan Kasi Pemerintahan untuk menyusun peta wilayah desa adalah...",
-    "options": [
-      "A. Peta dusun",
-      "B. Peta Rencana Pembangunan",
-      "C. Peta Rawan Bencana",
-      "D. Peta Jalan Kabupaten",
-      "E. Peta Tanah Kas Desa"
+ {
+    q: "Seorang warga datang mengadu bahwa nama anaknya salah tulis di KK. Apa langkah awal Kasi Pemerintahan?",
+    options: [
+      "A. Langsung meralat nama di KK",
+      "B. Menyuruh warga ke Dinas Kependudukan",
+      "C. Membuat surat pengantar koreksi dan memverifikasi dokumen pendukung",
+      "D. Mengabaikan karena itu bukan wewenangnya",
+      "E. Menghubungi Camat untuk instruksi"
     ],
-    "answer": 0,
-    "explanation": "Kasi Pemerintahan menyiapkan dan memperbaharui peta dusun atau peta wilayah administratif desa."
+    answer: 2,
+    explanation: "Tugas Kasi Pemerintahan adalah membantu warga dalam koreksi data dengan membuat surat pengantar resmi."
   },
   {
-    "q": "Apa wewenang Kasi Pemerintahan terkait perubahan data penduduk di Desa Ngrayudan?",
-    "options": [
-      "A. Menyetujui permohonan bantuan sosial",
-      "B. Mengetik surat pengantar SKTM",
-      "C. Merekam data biometrik penduduk",
-      "D. Menerima dan memverifikasi perubahan data penduduk",
-      "E. Menetapkan status ekonomi warga"
+    q: "Dalam kegiatan musyawarah desa tentang batas wilayah antar dusun, Kasi Pemerintahan bertugas...",
+    options: [
+      "A. Menyiapkan anggaran acara",
+      "B. Menentukan lokasi rapat",
+      "C. Mencatat hasil musyawarah dan membuat berita acara",
+      "D. Mengundang tokoh masyarakat",
+      "E. Membuat spanduk acara"
     ],
-    "answer": 3,
-    "explanation": "Kasi Pemerintahan menerima dan memverifikasi perubahan data penduduk seperti KK, KTP, pindah datang."
+    answer: 2,
+    explanation: "Salah satu peran penting Kasi Pemerintahan adalah mencatat keputusan administratif dalam forum resmi."
   },
   {
-    "q": "Untuk menyelesaikan sengketa batas tanah antarwarga, Kasi Pemerintahan dapat melakukan langkah awal berupa...",
-    "options": [
-      "A. Menghubungi notaris",
-      "B. Melaporkan ke kepolisian",
-      "C. Menyusun SK penyelesaian",
-      "D. Memediasi melalui musyawarah desa",
-      "E. Menyerahkan langsung ke kecamatan"
+    q: "Ketika terjadi perbedaan versi data jumlah penduduk antara RT dan data desa, Kasi Pemerintahan harus...",
+    options: [
+      "A. Menegur RT",
+      "B. Mengikuti data yang lebih besar",
+      "C. Melakukan verifikasi ulang lapangan",
+      "D. Menghapus data yang salah",
+      "E. Melaporkan ke camat"
     ],
-    "answer": 3,
-    "explanation": "Sengketa awal biasanya dimediasi dulu melalui musyawarah desa, dengan fasilitasi Kasi Pemerintahan dan Kepala Desa."
+    answer: 2,
+    explanation: "Verifikasi lapangan adalah langkah terbaik untuk menyelaraskan data penduduk."
   },
   {
-    "q": "Kasi Pemerintahan berkewajiban membuat laporan bulanan tentang...",
-    "options": [
-      "A. Realisasi APBDes",
-      "B. Keuangan BUMDes",
-      "C. Data penduduk dan kelembagaan",
-      "D. Hasil panen dan harga pasar",
-      "E. Partisipasi gotong royong"
+    q: "Dalam rapat koordinasi bersama Bhabinkamtibmas, Kasi Pemerintahan menyampaikan...",
+    options: [
+      "A. Usulan pembangunan fisik",
+      "B. Data kependudukan terkini dan isu ketertiban lingkungan",
+      "C. Rencana kerja RT",
+      "D. Program bantuan sosial",
+      "E. Rekap anggaran desa"
     ],
-    "answer": 2,
-    "explanation": "Laporan rutin yang menjadi tugas Kasi Pemerintahan berisi tentang perkembangan data penduduk dan kelembagaan."
+    answer: 1,
+    explanation: "Informasi mengenai kependudukan dan ketertiban merupakan ranah koordinasi utama antara Kasi Pemerintahan dan Bhabinkamtibmas."
   },
   {
-    "q": "Jika terjadi tumpang tindih wilayah antara Dusun di Desa Ngrayudan, siapa yang bertanggung jawab menyusun dokumen rekomendasi penyelesaian?",
-    "options": [
-      "A. Sekretaris Desa",
-      "B. Kasi Kesejahteraan",
+    q: "Salah satu prinsip kerja perangkat desa termasuk Kasi Pemerintahan adalah...",
+    options: [
+      "A. Dominasi",
+      "B. Netralitas",
+      "C. Politik praktis",
+      "D. Favoritisme",
+      "E. Keputusan sepihak"
+    ],
+    answer: 1,
+    explanation: "Perangkat desa harus netral, tidak berpihak dalam politik dan berlaku adil terhadap semua warga."
+  },
+  {
+    q: "Ketika terjadi konflik antardusun soal batas tanah, sikap yang harus diambil Kasi Pemerintahan adalah...",
+    options: [
+      "A. Membiarkan warga menyelesaikan sendiri",
+      "B. Menyuruh warga ke pengadilan",
+      "C. Menyusun kronologi kejadian dan berkoordinasi dengan Kepala Desa",
+      "D. Membela salah satu pihak",
+      "E. Tidak perlu ikut campur"
+    ],
+    answer: 2,
+    explanation: "Kasi Pemerintahan harus membantu penyelesaian administratif dan menjadi fasilitator."
+  },
+  {
+    q: "Dalam laporan mingguan, hal utama yang perlu dilaporkan Kasi Pemerintahan adalah...",
+    options: [
+      "A. Jumlah sumbangan warga",
+      "B. Data kerusakan jalan",
+      "C. Aktivitas RT dan RW, data kependudukan, dan isu ketertiban",
+      "D. Jumlah anak sekolah",
+      "E. Usulan bantuan sosial"
+    ],
+    answer: 2,
+    explanation: "Fokus laporan Kasi Pemerintahan adalah pada bidang tugasnya yaitu administrasi pemerintahan dan kewilayahan."
+  },
+  {
+    q: "Jika ditemukan satu warga tidak memiliki KTP dan KK, tindakan pertama yang dilakukan adalah...",
+    options: [
+      "A. Menegurnya secara lisan",
+      "B. Membuatkan surat pengantar ke Disdukcapil",
+      "C. Melaporkan ke polisi",
+      "D. Menyebarkan lewat grup WhatsApp desa",
+      "E. Melarang ikut kegiatan desa"
+    ],
+    answer: 1,
+    explanation: "Tugas Kasi Pemerintahan adalah memfasilitasi warga mendapatkan dokumen kependudukan resmi."
+  },
+  {
+    q: "Dalam pembuatan surat keterangan kematian, dokumen yang perlu diperiksa terlebih dahulu oleh Kasi Pemerintahan adalah...",
+    options: [
+      "A. Buku nikah",
+      "B. Kartu keluarga dan surat keterangan dari RT",
+      "C. Sertifikat tanah",
+      "D. Ijazah terakhir",
+      "E. NPWP"
+    ],
+    answer: 1,
+    explanation: "KK dan surat dari RT digunakan untuk memastikan identitas dan alamat warga."
+  },
+  {
+    q: "Saat Kasi Pemerintahan menerima laporan pemalsuan dokumen, langkah terbaik adalah...",
+    options: [
+      "A. Menyelesaikan secara pribadi",
+      "B. Melaporkan ke Kepala Desa dan menyarankan ke pihak berwenang",
+      "C. Menutupi agar tidak gaduh",
+      "D. Menyebarkan ke media sosial",
+      "E. Mengusir pelapor"
+    ],
+    answer: 1,
+    explanation: "Pemalsuan dokumen adalah pelanggaran hukum yang harus diproses sesuai ketentuan dengan koordinasi kepala desa."
+  },
+  {
+    q: "Etika dasar bagi Kasi Pemerintahan dalam melayani warga adalah...",
+    options: [
+      "A. Memilih berdasarkan hubungan keluarga",
+      "B. Menunggu warga memberi imbalan",
+      "C. Berlaku adil, ramah, dan cepat dalam pelayanan",
+      "D. Menolak warga dari dusun lain",
+      "E. Melayani sesuai jam kerja saja"
+    ],
+    answer: 2,
+    explanation: "Perangkat desa harus profesional dalam melayani seluruh warga secara adil."
+  },
+  {
+    q: "Dalam situasi warga pindah ke luar negeri, siapa yang mendata dan membuat surat keterangan?",
+    options: [
+      "A. Camat",
+      "B. Kepala Dusun",
+      "C. Kasi Pemerintahan",
+      "D. Kaur Keuangan",
+      "E. Ketua BPD"
+    ],
+    answer: 2,
+    explanation: "Perubahan data penduduk, termasuk keluar negeri, masuk ranah administrasi kependudukan Kasi Pemerintahan."
+  },
+  {
+    q: "Jika warga meminta surat keterangan namun datanya belum sesuai, maka...",
+    options: [
+      "A. Langsung dibuatkan",
+      "B. Ditolak mentah-mentah",
+      "C. Dibuat surat keterangan palsu",
+      "D. Diberi waktu melengkapi dokumen terlebih dahulu",
+      "E. Dikirim ke kecamatan"
+    ],
+    answer: 3,
+    explanation: "Warga harus diminta melengkapi dulu persyaratan agar surat yang diterbitkan sah."
+  },
+  {
+    q: "Contoh konflik administratif yang harus ditangani Kasi Pemerintahan adalah...",
+    options: [
+      "A. Rebutan warisan",
+      "B. Perubahan struktur BPD",
+      "C. Perselisihan tapal batas antar dusun",
+      "D. Kegiatan pemuda karang taruna",
+      "E. Penolakan bantuan sosial"
+    ],
+    answer: 2,
+    explanation: "Masalah tapal batas merupakan konflik administratif yang perlu dicatat dan difasilitasi."
+  },
+  {
+    q: "Surat keterangan dari desa memiliki kekuatan hukum bila...",
+    options: [
+      "A. Dibuat oleh RT",
+      "B. Dibubuhi materai",
+      "C. Ditandatangani oleh Kasi Pemerintahan",
+      "D. Ditandatangani oleh Kepala Desa",
+      "E. Disimpan dalam lemari"
+    ],
+    answer: 3,
+    explanation: "Kepala Desa adalah pejabat yang berwenang mengesahkan surat resmi desa."
+  },
+  {
+    q: "Jika terjadi bencana longsor kecil di satu RT, maka Kasi Pemerintahan harus...",
+    options: [
+      "A. Melapor ke BMKG",
+      "B. Menyuruh warga memperbaiki sendiri",
+      "C. Menyusun laporan awal dan koordinasi dengan kepala desa dan dusun",
+      "D. Menunggu perintah",
+      "E. Membuat grup WhatsApp baru"
+    ],
+    answer: 2,
+    explanation: "Penanganan awal bencana skala kecil dimulai dari perangkat desa."
+  },
+  {
+    q: "Salah satu alasan seorang perangkat desa diberhentikan adalah...",
+    options: [
+      "A. Sering diminta bantu warga",
+      "B. Pindah ke luar negeri secara menetap",
+      "C. Tidak ikut ronda malam",
+      "D. Miskin",
+      "E. Tidak menikah"
+    ],
+    answer: 1,
+    explanation: "Pindah tempat tinggal secara permanen adalah salah satu alasan pemberhentian perangkat desa menurut aturan."
+  },
+  {
+    q: "Dalam kegiatan pelayanan administrasi, penting bagi Kasi Pemerintahan untuk memiliki...",
+    options: [
+      "A. Gedung sendiri",
+      "B. HP canggih",
+      "C. Data penduduk yang mutakhir dan sistematis",
+      "D. Surat tugas dari BPD",
+      "E. Seragam harian"
+    ],
+    answer: 2,
+    explanation: "Data yang akurat memudahkan pelayanan cepat dan tepat sasaran."
+  },
+  {
+    q: "Bila RT meminta bantuan mencetak rekap data penduduk, sikap Kasi Pemerintahan sebaiknya...",
+    options: [
+      "A. Menolak karena itu tugas RT",
+      "B. Membantu mencetak sesuai data yang tersedia",
+      "C. Menyuruh ke Sekretaris Desa",
+      "D. Melapor ke Camat",
+      "E. Menunda sampai ada anggaran"
+    ],
+    answer: 1,
+    explanation: "Pelayanan berbasis data adalah bagian dari pelayanan administratif yang bisa dibantu oleh Kasi Pemerintahan."
+  },
+  {
+    q: "Jika ada dua warga dengan nama dan tanggal lahir sama, maka solusi yang harus dilakukan adalah...",
+    options: [
+      "A. Membuat surat pembeda alamat dan NIK",
+      "B. Mengubah nama salah satu",
+      "C. Melaporkan ke Polisi",
+      "D. Tidak perlu diproses",
+      "E. Dihapus salah satu dari sistem"
+    ],
+    answer: 0,
+    explanation: "Pembeda bisa dilakukan dengan menambahkan informasi seperti NIK dan alamat agar identitas tidak tertukar."
+  },
+  {
+    q: "Lembaga yang memiliki fungsi kontrol terhadap jalannya pemerintahan desa adalah...",
+    options: [
+      "A. Karang Taruna",
+      "B. RT/RW",
+      "C. BPD",
+      "D. Kaur Umum",
+      "E. LPM"
+    ],
+    answer: 2,
+    explanation: "BPD (Badan Permusyawaratan Desa) menjalankan fungsi kontrol dan menyerap aspirasi masyarakat terhadap jalannya pemerintahan desa."
+  },
+  {
+    q: "Dalam pelaksanaan pemilu, peran Kasi Pemerintahan adalah...",
+    options: [
+      "A. Menghitung suara",
+      "B. Menentukan calon",
+      "C. Menyusun DPT dan membantu administrasi logistik",
+      "D. Menjadi petugas KPPS",
+      "E. Menyebar kampanye calon"
+    ],
+    answer: 2,
+    explanation: "Kasi Pemerintahan bertugas mendukung kelancaran administratif, seperti sinkronisasi data penduduk dan distribusi logistik."
+  },
+  {
+    q: "Forum yang digunakan untuk menyampaikan laporan pertanggungjawaban pemerintah desa adalah...",
+    options: [
+      "A. Musyawarah Dusun",
+      "B. Musyawarah RT",
+      "C. Musyawarah Desa",
+      "D. Forum Warga",
+      "E. Rapat BPD"
+    ],
+    answer: 2,
+    explanation: "Musyawarah Desa merupakan wadah resmi untuk menyampaikan kebijakan dan laporan kegiatan desa."
+  },
+  {
+    q: "Saat warga menolak hasil pemekaran RT, maka Kasi Pemerintahan harus...",
+    options: [
+      "A. Membatalkan tanpa alasan",
+      "B. Meninggalkan rapat",
+      "C. Menyusun ulang dengan pendekatan dialog",
+      "D. Mencoret warga dari daftar",
+      "E. Menyerahkan ke kecamatan"
+    ],
+    answer: 2,
+    explanation: "Perubahan struktur sosial harus dikawal melalui musyawarah dan pendekatan persuasif."
+  },
+  {
+    q: "Dalam pembentukan panitia pemilihan kepala dusun, Kasi Pemerintahan bertugas sebagai...",
+    options: [
+      "A. Calon tunggal",
+      "B. Pengawas netral",
+      "C. Sekretaris panitia",
+      "D. Ketua panitia",
+      "E. Pendamping teknis"
+    ],
+    answer: 4,
+    explanation: "Kasi Pemerintahan mendampingi secara teknis dan administratif, bukan sebagai pelaksana langsung."
+  },
+  {
+    q: "RT dan RW dibentuk melalui...",
+    options: [
+      "A. Surat Kepala Desa",
+      "B. Keputusan BPD",
+      "C. Peraturan Desa",
+      "D. Hasil pemilu nasional",
+      "E. Keputusan Camat"
+    ],
+    answer: 2,
+    explanation: "RT dan RW adalah bagian dari lembaga kemasyarakatan yang dibentuk melalui Peraturan Desa (Perdes)."
+  },
+  {
+    q: "Jika ada warga yang mengalami konflik dengan aparat keamanan, siapa yang pertama memfasilitasi mediasi di tingkat desa?",
+    options: [
+      "A. Kepala Desa",
+      "B. Ketua RT",
+      "C. Kasi Pemerintahan",
+      "D. BPD",
+      "E. Sekretaris Desa"
+    ],
+    answer: 2,
+    explanation: "Kasi Pemerintahan menangani urusan ketertiban umum dan koordinasi dengan unsur keamanan."
+  },
+  {
+    q: "Dalam proses perencanaan desa, masyarakat harus dilibatkan melalui...",
+    options: [
+      "A. Undangan khusus",
+      "B. Rapat internal perangkat",
+      "C. Musyawarah Desa (Musdes)",
+      "D. Sidang BPD",
+      "E. Surat Camat"
+    ],
+    answer: 2,
+    explanation: "Musdes adalah forum legal dan partisipatif untuk menyusun rencana pembangunan desa."
+  },
+  {
+    q: "Jika RT dan RW tidak aktif menjalankan tugas, Kasi Pemerintahan harus...",
+    options: [
+      "A. Memanggil dan melakukan pembinaan",
+      "B. Melaporkan ke Camat",
+      "C. Menggantinya sepihak",
+      "D. Menghapus strukturnya",
+      "E. Menyurati BPD"
+    ],
+    answer: 0,
+    explanation: "Pembinaan kelembagaan RT/RW menjadi bagian dari tanggung jawab Kasi Pemerintahan."
+  },
+  {
+    q: "Dalam menyampaikan informasi publik, Kasi Pemerintahan harus berpedoman pada prinsip...",
+    options: [
+      "A. Kerahasiaan total",
+      "B. Satu arah",
+      "C. Keterbukaan, kejelasan, dan akurasi",
+      "D. Informasi seadanya",
+      "E. Menunggu pertanyaan warga"
+    ],
+    answer: 2,
+    explanation: "Informasi pemerintahan desa harus akurat dan transparan agar dapat dipertanggungjawabkan."
+  },
+  {
+    q: "Lembaga desa yang fokus pada kegiatan kepemudaan adalah...",
+    options: [
+      "A. LPM",
+      "B. PKK",
+      "C. Karang Taruna",
+      "D. RT",
+      "E. BPD"
+    ],
+    answer: 2,
+    explanation: "Karang Taruna adalah lembaga sosial kepemudaan yang bermitra dengan pemerintah desa."
+  },
+  {
+    q: "Jika ada warga yang akan menikah dengan orang asing, siapa yang pertama kali dihubungi untuk mengurus surat pengantar?",
+    options: [
+      "A. Kasi Kesejahteraan",
+      "B. Sekretaris Desa",
       "C. Kasi Pemerintahan",
       "D. Kepala Dusun",
       "E. Ketua RT"
     ],
-    "answer": 2,
-    "explanation": "Penyusunan dokumen terkait batas wilayah termasuk rekomendasi teknis adalah tugas Kasi Pemerintahan."
+    answer: 2,
+    explanation: "Administrasi pernikahan lintas negara memerlukan surat keterangan dari Kasi Pemerintahan sebagai dasar ke KUA dan Imigrasi."
   },
   {
-    "q": "Pengusulan perubahan jumlah RT di Dusun Dungus sebaiknya melalui siapa?",
-    "options": [
-      "A. Kasi Pemerintahan",
+    q: "Dalam hal warga ingin membuat yayasan, surat keterangan domisili harus dikeluarkan oleh...",
+    options: [
+      "A. Ketua RT",
       "B. Kepala Dusun",
-      "C. Ketua RT",
-      "D. Sekretaris Desa",
-      "E. Kasi Pelayanan"
-    ],
-    "answer": 1,
-    "explanation": "Pengusulan biasanya dilakukan oleh Kepala Dusun berdasarkan kondisi lapangan, kemudian diteruskan ke Kasi Pemerintahan."
-  },
-  {
-    "q": "Kegiatan rutin Kasi Pemerintahan setiap awal tahun adalah...",
-    "options": [
-      "A. Menyusun Laporan Realisasi Keuangan",
-      "B. Menyiapkan data pemilu atau pemilihan desa",
-      "C. Membuat laporan penyuluhan kesehatan",
-      "D. Mendistribusikan bantuan sosial",
-      "E. Menyalurkan pupuk bersubsidi"
-    ],
-    "answer": 1,
-    "explanation": "Kasi Pemerintahan menyiapkan data untuk keperluan pemilu dan pemilihan kepala desa jika dijadwalkan dalam tahun berjalan."
-  },
-  {
-    "q": "Berikut ini kegiatan Kasi Pemerintahan yang mendukung ketertiban administrasi, kecuali...",
-    "options": [
-      "A. Pengarsipan KK dan KTP",
-      "B. Pemetaan wilayah RT",
-      "C. Pendataan surat tanah warga",
-      "D. Distribusi bantuan BLT",
-      "E. Pengecekan dokumen pindah datang"
-    ],
-    "answer": 3,
-    "explanation": "Distribusi bantuan BLT menjadi tugas perangkat lain, seperti Kaur Keuangan atau Pelayanan."
-  },
-  {
-    "q": "Kelembagaan seperti Linmas (Perlindungan Masyarakat) di desa dikoordinasikan oleh...",
-    "options": [
-      "A. Kasi Kesejahteraan",
-      "B. Kasi Pelayanan",
       "C. Kasi Pemerintahan",
       "D. Sekretaris Desa",
-      "E. Kepala Dusun"
+      "E. Kaur Umum"
     ],
-    "answer": 2,
-    "explanation": "Linmas sebagai bagian dari ketertiban umum berada di bawah koordinasi Kasi Pemerintahan."
+    answer: 2,
+    explanation: "Semua bentuk legalitas awal lembaga berbasis warga harus melalui surat domisili dari desa."
   },
   {
-    "q": "Untuk menyusun laporan lembaga kemasyarakatan desa, Kasi Pemerintahan harus bekerja sama dengan...",
-    "options": [
-      "A. Kaur Keuangan",
-      "B. Kasi Pelayanan",
-      "C. Ketua RT dan RW",
-      "D. Kepala Dusun",
-      "E. Semua jawaban benar"
+    q: "Ketika terdapat laporan pungutan liar oleh perangkat desa, maka langkah awal yang etis bagi Kasi Pemerintahan adalah...",
+    options: [
+      "A. Menyalahkan pelapor",
+      "B. Menyebarkan informasi ke publik",
+      "C. Melaporkan ke Kepala Desa dan ikut menyelidiki",
+      "D. Membela teman sekerja",
+      "E. Menghapus bukti"
     ],
-    "answer": 4,
-    "explanation": "Agar laporan lembaga masyarakat akurat, Kasi Pemerintahan perlu bekerja sama dengan semua unsur yang terkait."
+    answer: 2,
+    explanation: "Sebagai perangkat, Kasi Pemerintahan wajib menjaga etika dan ikut menegakkan integritas pemerintahan desa."
+  },
+  {
+    q: "Hubungan kerja antara perangkat desa dan BPD bersifat...",
+    options: [
+      "A. Hirarkis",
+      "B. Profesional formal",
+      "C. Kemitraan",
+      "D. Supervisi",
+      "E. Perintah langsung"
+    ],
+    answer: 2,
+    explanation: "Hubungan antara BPD dan pemerintah desa bersifat kemitraan, bukan atasan-bawahan."
+  },
+  {
+    q: "Dalam sistem pelaporan online seperti SIAK, siapa yang bertanggung jawab atas input data kependudukan awal dari desa?",
+    options: [
+      "A. Camat",
+      "B. Sekretaris Desa",
+      "C. Kasi Pemerintahan",
+      "D. Kasi Pelayanan",
+      "E. BPD"
+    ],
+    answer: 2,
+    explanation: "Data kependudukan diinput dan diperbarui oleh desa melalui Kasi Pemerintahan sebelum disahkan oleh Disdukcapil."
+  },
+  {
+    q: "Dalam penyelesaian konflik sosial, pendekatan yang harus dilakukan Kasi Pemerintahan adalah...",
+    options: [
+      "A. Hukum pidana",
+      "B. Kekuasaan",
+      "C. Pendekatan sosial, musyawarah, dan mediasi",
+      "D. Pemanggilan aparat",
+      "E. Pemaksaan keputusan"
+    ],
+    answer: 2,
+    explanation: "Konflik sosial di desa lebih efektif diselesaikan melalui pendekatan sosial dan dialog terbuka."
+  },
+  {
+    q: "Jika ada informasi yang menyesatkan di media sosial desa, siapa yang berwenang memberi klarifikasi resmi?",
+    options: [
+      "A. Ketua Karang Taruna",
+      "B. Kepala Dusun",
+      "C. Kasi Pemerintahan atas nama Kepala Desa",
+      "D. Ketua RW",
+      "E. Bendahara Desa"
+    ],
+    answer: 2,
+    explanation: "Klarifikasi informasi resmi desa harus melalui jalur struktural dan didukung data oleh Kasi Pemerintahan."
+  },
+  {
+    q: "Salah satu indikator kinerja Kasi Pemerintahan yang baik adalah...",
+    options: [
+      "A. Banyaknya rapat",
+      "B. Banyak membuat surat",
+      "C. Administrasi kependudukan dan wilayah tertib dan rapi",
+      "D. Membuka akses media",
+      "E. Memberi bantuan sosial"
+    ],
+    answer: 2,
+    explanation: "Kinerja Kasi Pemerintahan dilihat dari tertibnya administrasi wilayah, penduduk, dan pelaporan."
+  },
+  {
+    q: "Untuk memastikan bahwa RT dan RW bekerja sesuai tupoksi, maka Kasi Pemerintahan perlu...",
+    options: [
+      "A. Memberikan gaji tambahan",
+      "B. Menekan melalui ancaman",
+      "C. Membina secara berkala dan memberi laporan evaluasi",
+      "D. Mewakilkan ke dusun",
+      "E. Memberi tugas tambahan"
+    ],
+    answer: 2,
+    explanation: "Pembinaan rutin dan pelaporan kinerja kelembagaan menjadi bagian dari fungsi Kasi Pemerintahan."
+  },
+ {
+    q: "Ketika ada program nasional perekaman e-KTP, peran Kasi Pemerintahan di desa adalah...",
+    options: [
+      "A. Menjadi operator e-KTP",
+      "B. Menyiapkan anggaran desa",
+      "C. Menyediakan data calon perekam dan memfasilitasi pelaksanaan",
+      "D. Menyebarkan undangan dari RT",
+      "E. Melaporkan ke camat"
+    ],
+    answer: 2,
+    explanation: "Data penduduk dan fasilitasi kegiatan adalah bagian tugas Kasi Pemerintahan."
+  },
+  {
+    q: "Jika ditemukan warga yang tinggal di desa tanpa identitas resmi, maka langkah yang harus diambil adalah...",
+    options: [
+      "A. Mengusir dari desa",
+      "B. Melaporkan ke polisi",
+      "C. Membantu proses pendataan dan legalisasi keberadaan warga",
+      "D. Meminta Ketua RT menyelesaikan",
+      "E. Membiarkan saja"
+    ],
+    answer: 2,
+    explanation: "Penduduk yang belum terdata tetap berhak didampingi dalam memperoleh dokumen resmi."
+  },
+  {
+    q: "Dalam RPJMDes, usulan terkait penguatan administrasi kependudukan masuk dalam bidang...",
+    options: [
+      "A. Pemerintahan desa",
+      "B. Pembangunan desa",
+      "C. Pembinaan kemasyarakatan",
+      "D. Pemberdayaan masyarakat",
+      "E. Penanggulangan bencana"
+    ],
+    answer: 0,
+    explanation: "Administrasi penduduk adalah urusan pemerintahan desa."
+  },
+  {
+    q: "Jika dua warga desa saling klaim atas sebidang tanah warisan, langkah awal Kasi Pemerintahan adalah...",
+    options: [
+      "A. Memberi keputusan sepihak",
+      "B. Menyuruh salah satu pindah",
+      "C. Mencatat dan mengarahkan ke mediasi atau proses hukum",
+      "D. Memberi SK kepemilikan",
+      "E. Menghapus dokumen"
+    ],
+    answer: 2,
+    explanation: "Konflik tanah bukan kewenangan mutlak desa, namun wajib difasilitasi secara administratif."
+  },
+  {
+    q: "Dalam peraturan desa, kewenangan pemerintahan desa mencakup hal berikut, kecuali...",
+    options: [
+      "A. Penetapan RT/RW",
+      "B. Penataan batas wilayah",
+      "C. Pembangunan jalan tol",
+      "D. Administrasi kependudukan",
+      "E. Ketertiban umum"
+    ],
+    answer: 2,
+    explanation: "Jalan tol merupakan kewenangan pusat atau provinsi, bukan desa."
+  },
+  {
+    q: "Program “Gerakan Indonesia Sadar Administrasi Kependudukan” (GISA) bertujuan untuk...",
+    options: [
+      "A. Memberi bantuan sosial langsung",
+      "B. Membuat akta tanah massal",
+      "C. Meningkatkan kesadaran pentingnya dokumen kependudukan",
+      "D. Memberi tunjangan perangkat",
+      "E. Memberantas hoaks"
+    ],
+    answer: 2,
+    explanation: "GISA fokus pada literasi administrasi kependudukan."
+  },
+  {
+    q: "Dalam pembuatan surat pernyataan tanah, Kasi Pemerintahan berperan sebagai...",
+    options: [
+      "A. Penjamin hak tanah",
+      "B. Notaris desa",
+      "C. Pencatat administratif dan saksi",
+      "D. Pemilik tanah",
+      "E. Pengukur tanah"
+    ],
+    answer: 2,
+    explanation: "Surat tanah dibuat dengan kesaksian dan pencatatan administratif, bukan penetapan hukum."
+  },
+  {
+    q: "Salah satu indikator keberhasilan Kasi Pemerintahan adalah...",
+    options: [
+      "A. Banyak membuat kegiatan",
+      "B. Tidak menerima keluhan",
+      "C. Tertib dan akuratnya administrasi penduduk dan wilayah",
+      "D. Menang lomba desa",
+      "E. Menurunnya warga miskin"
+    ],
+    answer: 2,
+    explanation: "Kinerja utama Kasi Pemerintahan ada pada fungsi pencatatan dan pengurusan data."
+  },
+  {
+    q: "Jika terjadi perubahan nama dusun berdasarkan usulan warga, proses awal dilakukan melalui...",
+    options: [
+      "A. SK Camat",
+      "B. SK Kepala Desa",
+      "C. Musyawarah Dusun dan Musyawarah Desa",
+      "D. Rapat RT",
+      "E. Rekomendasi Sekretaris Desa"
+    ],
+    answer: 2,
+    explanation: "Perubahan nama wilayah memerlukan persetujuan melalui forum legal musyawarah desa."
+  },
+  {
+    q: "Jika ada laporan RT fiktif dalam administrasi, langkah Kasi Pemerintahan adalah...",
+    options: [
+      "A. Menghapus RT tersebut",
+      "B. Menutup mata",
+      "C. Verifikasi data dan melaporkan ke Kepala Desa dan BPD",
+      "D. Menyerahkan ke RT lain",
+      "E. Membuat RT baru"
+    ],
+    answer: 2,
+    explanation: "Kasus administrasi seperti RT fiktif harus diverifikasi dan dilaporkan secara bertanggung jawab."
+  },
+  {
+    q: "Jika dalam pendataan penduduk ditemukan NIK ganda, siapa yang menjadi rujukan utama?",
+    options: [
+      "A. Dinas Sosial",
+      "B. Camat",
+      "C. Disdukcapil",
+      "D. Kaur Keuangan",
+      "E. Ketua BPD"
+    ],
+    answer: 2,
+    explanation: "Kewenangan sah tentang validasi NIK berada di Dinas Kependudukan dan Catatan Sipil."
+  },
+  {
+    q: "Dalam pelaksanaan Pemilihan Umum, perangkat desa harus bersikap...",
+    options: [
+      "A. Mendukung paslon tertentu",
+      "B. Menjadi tim sukses",
+      "C. Netral dan tidak berpihak",
+      "D. Menyebar bahan kampanye",
+      "E. Memfasilitasi kampanye"
+    ],
+    answer: 2,
+    explanation: "Netralitas ASN dan perangkat desa adalah prinsip demokrasi."
+  },
+  {
+    q: "Surat pengantar dari desa menjadi sah jika...",
+    options: [
+      "A. Ditandatangani RT",
+      "B. Dicap RW",
+      "C. Ditandatangani Kepala Desa dan distempel resmi",
+      "D. Dibawa ke camat",
+      "E. Ditandatangani warga"
+    ],
+    answer: 2,
+    explanation: "Surat pengantar desa wajib legal secara hukum dengan tanda tangan dan cap desa."
+  },
+  {
+    q: "Fungsi koordinasi Kasi Pemerintahan dalam Sensus Penduduk adalah...",
+    options: [
+      "A. Menjadi pencacah",
+      "B. Menyiapkan anggaran",
+      "C. Menyediakan data awal dan membantu logistik petugas BPS",
+      "D. Menyusun RPJMDes",
+      "E. Membuat TPS"
+    ],
+    answer: 2,
+    explanation: "Data penduduk desa sangat membantu validitas hasil sensus."
+  },
+  {
+    q: "Yang bukan tugas Kasi Pemerintahan adalah...",
+    options: [
+      "A. Menata wilayah dusun",
+      "B. Mencatat mutasi penduduk",
+      "C. Mengesahkan APBDes",
+      "D. Menyusun laporan data penduduk",
+      "E. Membuat surat keterangan domisili"
+    ],
+    answer: 2,
+    explanation: "APBDes disahkan oleh Kepala Desa dan BPD, bukan Kasi Pemerintahan."
+  },
+  {
+    q: "Salah satu upaya untuk menciptakan keamanan dan ketertiban lingkungan adalah...",
+    options: [
+      "A. Menyuruh warga diam",
+      "B. Membentuk poskamling dan ronda malam",
+      "C. Menutup semua akses luar",
+      "D. Melibatkan preman",
+      "E. Menyebarkan ancaman"
+    ],
+    answer: 1,
+    explanation: "Ronda dan poskamling adalah solusi partisipatif dan preventif."
+  },
+  {
+    q: "Dalam rangka pemutakhiran data, Kasi Pemerintahan wajib membuat...",
+    options: [
+      "A. SPJ",
+      "B. Daftar Hadir",
+      "C. Rekapitulasi mutasi penduduk dan laporan bulanan",
+      "D. Kegiatan lomba",
+      "E. Kartu kuning"
+    ],
+    answer: 2,
+    explanation: "Data yang dinamis perlu dilaporkan dan direkap rutin."
+  },
+  {
+    q: "Jika ada warga yang membuat surat pengantar pindah tapi tidak diketahui RT, maka...",
+    options: [
+      "A. Langsung diproses",
+      "B. Diabaikan",
+      "C. Dikembalikan untuk dilengkapi",
+      "D. Dibuat berdasarkan tebakan",
+      "E. Dikirim ke kecamatan"
+    ],
+    answer: 2,
+    explanation: "Legalitas administratif dimulai dari tingkat bawah (RT/RW) yang harus tercantum."
+  },
+  {
+    q: "Untuk mendukung tertib arsip surat desa, Kasi Pemerintahan bekerja sama dengan...",
+    options: [
+      "A. Kaur Keuangan",
+      "B. Sekretaris Desa",
+      "C. Ketua RW",
+      "D. BPD",
+      "E. Kepala Dusun"
+    ],
+    answer: 1,
+    explanation: "Sekdes bertugas dalam manajemen administrasi dan arsip."
+  },
+  {
+    q: "Ketika ada kebijakan dari kecamatan yang terkait data penduduk, Kasi Pemerintahan harus...",
+    options: [
+      "A. Menolak",
+      "B. Melaporkan ke BPD",
+      "C. Menyesuaikan dan mengkoordinasikan data",
+      "D. Membuat kebijakan tandingan",
+      "E. Membiarkan saja"
+    ],
+    answer: 2,
+    explanation: "Koordinasi vertikal penting agar data dan kebijakan sinkron antar level pemerintahan."
   }
-]
+];
+
+
     let currentQuestion = 0;
     let score = 0;
     let answers = [];
